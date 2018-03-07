@@ -7,8 +7,8 @@ yum -y install git \
  libtool autoconf automake make \
  rpm-build git
 # anything listed in the "BuildRequires:" of the spec file is listed below
-# >= 2.4.3
-yum -y install libarchive-devel python
+# = 2.4.4
+yum -y install python
 
 %runscript
 D=`mktemp -d`
