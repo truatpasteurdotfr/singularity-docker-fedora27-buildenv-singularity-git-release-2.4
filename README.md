@@ -5,7 +5,8 @@ example Dockerfile provided for convenience.
 
 Running without installation:
 ```
-singularity run shub://truatpasteurdotfr/singularity-docker-fedora27-buildenv-singularity-git-release-2.4
+export OUT=`mktemp -d` && echo building in ${OUT} && \
+singularity run -H ${OUT}  shub://truatpasteurdotfr/singularity-docker-fedora27-buildenv-singularity-git-release-2.4
 ```
 Building:
 ```
